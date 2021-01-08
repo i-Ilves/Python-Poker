@@ -33,6 +33,12 @@ class Deck:
         for i in range(len(self.cards) -1, 0, -1):
             ran = random.randint(0, i)
             self.cards[i], self.cards[ran] = self.cards[ran], self.cards[i]
+        print("\n Shuffled deck\n")
 
-    def drawCard(self):
+    def amountOfCards(self, deck):
+        return len(deck)
+
+    def drawCard(self, deck):
         return self.cards.pop()
+    
+    

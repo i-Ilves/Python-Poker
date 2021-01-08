@@ -6,22 +6,30 @@ from cards import Deck
 
 
 
+
+
+
+
 '''
 
-card = deck.drawCard()
-card.show()
-
-
-
 deck = Deck()
+deck.show()
 deck.shuffle()
+
 deck.show() 
+
 
 slim = Player("Slim")
 luke = Player("Luke")
 
+
+
 slim.drawHand(5, deck)
 luke.drawHand(5, deck)
+
+
+card = deck.drawCard()
+card.show() 
 
 luke.showHand()
 
@@ -40,4 +48,5 @@ slim.showHand()
 luke.draw(deck)
 
 luke.showHand()
+
 '''
